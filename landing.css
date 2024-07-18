@@ -46,7 +46,7 @@ h2 {
 }
 .landing h2 a:hover{
     text-decoration: none;
-    color: #0C4842;
+    color: #273800;
     transition: color 1s ease-in-out;
 }
 .landing h2 a:active{

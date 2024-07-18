@@ -1,0 +1,33 @@
+html{
+    writing-mode: vertical-rl;
+}
+body{
+    position: absolute;
+    top: 50%;
+    bottom:0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.day{
+    text-align: left;
+    text-indent: 2rem;
+    font-family: ab-kouran-gyosho, sans-serif;
+    color: #0C4842;
+    font-size: 2em;
+    line-height: 2em;
+}
+.tanka{
+    text-align: left;
+    text-indent: 1em;
+    font-family: ab-appare, sans-serif;
+    font-size: 3em;
+    line-height: 2em;
+}
+
+.tanka rt{
+    font-family: ab-kouran-gyosho, sans-serif;
+    font-size: 0.35em;
+    color: #0C4842;
+
+}

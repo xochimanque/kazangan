@@ -1,14 +1,49 @@
 html{
     writing-mode: vertical-rl;
+
 }
+
 body{
-    position: absolute;
-    top: 50%;
-    bottom:0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    height: 50vh;
+    margin-bottom: 25vh;
+    margin-top: 25vh;
+    max-width: 50vw;
+    margin-right: calc(8px + 1.5625vw);
+    padding-left: calc(8px + 1.5625vw);
     text-align: left;
 }
+header {
+    font-family: hot-tenkoinkk, sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    color: #576936;
+    writing-mode: horizontal-tb;
+    position: sticky;
+    margin-top: -22vh;
+    top:1vh;
+    padding-top: 2vh;
+    left: calc((50vw - calc(8px + 1.5625vw) - 3em/2));
+    margin-right: calc(-8px - 1.5625vw);
+    text-align: center;
+    width: fit-content;
+}
+footer{
+    font-family: hot-tenkoinkk, sans-serif;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #7c745f;
+    writing-mode: horizontal-tb;
+    position: sticky;
+    margin-bottom: -22vh;
+    top: 92vh;
+    padding-bottom: 5vh;
+    left: calc((50vw - calc(8px + 1.5625vw) - 5em/2));
+    margin-right: calc(-8px - 1.5625vw);
+    text-align: center;
+    width: fit-content;
+}
+
 .day{
     text-align: left;
     text-indent: 2rem;
@@ -16,6 +51,7 @@ body{
     color: maroon;
     font-size: 2em;
     line-height: 2em;
+    margin-right: 3em;
 }
 .tanka{
     text-align: left;
@@ -23,6 +59,7 @@ body{
     font-family: ab-appare, sans-serif;
     font-size: 3em;
     line-height: 2em;
+    margin-left: 2em;
 }
 
 .tanka rt{
@@ -30,4 +67,44 @@ body{
     font-size: 0.35em;
     color: #273800;
 
+}
+a.home:link{
+    text-decoration: none;
+    color: #576936;
+    transition: color 1s ease-in-out;
+}
+a.home:visited{
+    text-decoration: none;
+    color: #576936;
+    transition: color 1s ease-in-out;
+}
+a.home:hover{
+    text-decoration: none;
+    color: maroon;
+    transition: color 1s ease-in-out;
+}
+a.home:active{
+    text-decoration: none;
+    color: #576936;
+    transition: color 10ms ease-in-out;
+}
+a.foot:link{
+    text-decoration: none;
+    color: #7c745f;
+    transition: color 1s ease-in-out;
+}
+a.foot:visited{
+    text-decoration: none;
+    color: #7c745f;
+    transition: color 1s ease-in-out;
+}
+a.foot:hover{
+    text-decoration: none;
+    color: maroon;
+    transition: color 1s ease-in-out;
+}
+a.foot:active{
+    text-decoration: none;
+    color: #7c745f;
+    transition: color 10ms ease-in-out;
 }

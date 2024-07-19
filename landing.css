@@ -29,20 +29,20 @@ h1:hover{
 h2 {
     margin-top: 1em;
     padding-top: -2em;
-    color: #0F2540;
-    font-family: ab-taro, sans-serif;
+    color: #576936;
+    font-family: hot-tenkoinkk, sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bolder;
     font-size: 5em;
 }
 .landing h2 a:link{
     text-decoration: none;
-    color: #0F2540;
+    color: #480000;
     transition: color 1s ease-in-out;
 }
 .landing h2 a:visited{
     text-decoration: none;
-    color: #0F2540;
+    color: #480000;
 }
 .landing h2 a:hover{
     text-decoration: none;
@@ -51,7 +51,7 @@ h2 {
 }
 .landing h2 a:active{
     text-decoration: none;
-    color: #0F2540;
+    color: #480000;
     transition: color 0.5s ease-in-out;
 }
 

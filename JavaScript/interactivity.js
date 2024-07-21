@@ -25,7 +25,7 @@ function rgbToHex(rgb) {
 
 let timeout;
 let timerActive= false;
-const elementsToHide = document.querySelectorAll('header, footer, .day');
+const elementsToHide = document.querySelectorAll('header, footer, .day, .headcont');
 const timeToDisappear = 3 * 1000;
 
 function resetTimer() {

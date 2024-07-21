@@ -179,7 +179,7 @@ a.foot:active{
 
 
 /* For Mobile Devices */
-@media (max-width: 1025px) {
+@media (max-width: 480px) {
     html, body{
         overflow-x: hidden;
     }

@@ -57,7 +57,7 @@ h2 {
 @media (max-width: 768px) {
     h1 {
         font-size: 8em !important;
-        display:block;
+        display:inline-block;
     }
     h2 {
         font-size: 3em !important;

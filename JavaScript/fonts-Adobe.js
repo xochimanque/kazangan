@@ -24,39 +24,3 @@
     s.parentNode.insertBefore(tk, s)
 })(document);
 
-// Sniffing iOS
-
-// Function to detect iOS devices
-function isIOS() {
-    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-}
-
-// Function to disable a specific CSS media query
-function disableMediaQuery(query) {
-    for (let i = 0; i < document.styleSheets.length; i++) {
-        const sheet = document.styleSheets[i];
-        try {
-            // Check if the sheet has CSS rules
-            if (!sheet.cssRules) continue;
-
-            // Iterate over each rule in the stylesheet
-            for (let j = 0; j < sheet.cssRules.length; j++) {
-                const rule = sheet.cssRules[j];
-
-                // Check if the rule is a media rule
-                if (rule.media && rule.media.mediaText === query) {
-                    // Disable the media query by removing the rule
-                    sheet.deleteRule(j);
-                    j--; // Decrement index to account for the removed rule
-                }
-            }
-        } catch (e) {
-            // Handle potential CORS errors silently
-            console.error(e);
-        }
-    }
-}
-
-if (isIOS()) {
-    disableMediaQuery('(max-width: 480px)');
-}

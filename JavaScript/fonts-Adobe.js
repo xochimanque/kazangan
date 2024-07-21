@@ -23,3 +23,11 @@
     };
     s.parentNode.insertBefore(tk, s)
 })(document);
+window.addEventListener('load', (event) => {
+    setTimeout(() => {
+        window.scrollTo({
+            left: window.innerWidth,
+            behavior: 'smooth',
+        });
+    }, 0);
+});

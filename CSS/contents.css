@@ -49,3 +49,29 @@ h3 a:hover{
     color: maroon;
     transition: color 1s ease-in-out;
 }
+
+@media (max-width: 480px) {
+html {
+    writing-mode: horizontal-tb;
+    text-align: center;
+
+}
+    .table{
+        position:relative;
+        left: 0;
+        transform: none;
+    }
+    h1{
+        margin: 1em;
+        font-size: 1.5em;
+
+    }
+    h2{
+        margin: .8em;
+        font-size: 1.2em;
+    }
+    h3 {
+        margin: .5em;
+        font-size: 0.8em;
+    }
+}

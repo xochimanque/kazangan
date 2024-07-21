@@ -212,7 +212,7 @@ a.foot:active{
         position: relative;
         height: auto;
         margin: 2vh 0;
-        max-width: 96vw;
+        max-width: 93vw;
         padding: 8vh 5vw;
 
     }
@@ -224,36 +224,49 @@ a.foot:active{
     }
 
     header {
+
         font-size: 1.5em;
         position: sticky;
         top: auto;
-        right: 0;
-        transform: translate(calc(25% - .5em), -10%);
+        left: 100% !important;
         text-align: center;
-        padding-bottom: 10vw;
+        padding-bottom: 15vh;
+
     }
 
     footer {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-47%, -60%);
+        position: sticky;
+        top: auto;
+        left: 100%;
         text-align: center;
         font-size: 0.8em;
+        padding-bottom: 25vh;
     }
 
     .day {
         font-size: 1em;
         line-height: 1.5em;
-        margin: 1em 1em;
+        margin: 1em 2em 2em 2em;
+        padding-top: 1em;
     }
 
     .tanka {
         font-size: 2em;
         line-height: 1.5em;
         margin: 1em 0;
+        padding-left: 1.5em;
+        padding-top: 1em;
+        padding-bottom: 0  !important;
     }
-
+    .tanka-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-left: 2em;
+        margin-right: 2em;
+        max-width: 15em;
+    }
     #defuriganify, #toggleButton {
         font-size: 0.8em;
     }

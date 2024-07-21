@@ -161,6 +161,9 @@ a.foot:active{
     transition: all 0.1s ease-in-out;
 }
 
+/* Media Queries */
+
+/* For Tablets and Small Desktops */
 @media (max-width: 768px) {
     body {
         height: auto;
@@ -170,23 +173,19 @@ a.foot:active{
     }
 
     header, footer {
-        position: relative;
-        margin: 2vh 0;
-        padding: 2vh 0;
+        position: fixed;
+        width: 100%;
         left: 0;
     }
 
     header {
         font-size: 2em;
-        margin-top: 0;
-        padding-top: 2vh;
+        top: 0;
     }
 
     footer {
         font-size: 1em;
-        margin-bottom: 0;
-        padding-bottom: 2vh;
-        top: auto;
+        bottom: 0;
     }
 
     .day {
@@ -210,49 +209,44 @@ a.foot:active{
 /* For Mobile Devices */
 @media (max-width: 480px) {
     body {
-        height: auto !important;
-        margin: 2vh 2vw !important;
-        max-width: 96vw !important;
-        padding-left: 2vw !important;
+        height: auto;
+        margin: 2vh 2vw;
+        max-width: 96vw;
+        padding-left: 2vw;
     }
 
     header, footer {
-        position: relative !important;
-        margin: 1vh 0 !important;
-        padding: 1vh 2vw !important;
-        left: auto !important;
-        display: inline-block;
+        position: fixed;
+        width: 100%;
+        left: 0;
     }
 
     header {
-        font-size: 1.5em !important;
-        margin-top: 0 !important;
-        padding-top: 1vh !important;
-        top: auto;
+        font-size: 1.5em;
+        top: 0;
+        padding-top: 2vh;
     }
 
     footer {
-        font-size: 0.8em !important;
-        margin-bottom: 3vh !important;
-        padding-bottom: 1vh !important;
-        top: auto !important;
-        bottom: auto;
+        font-size: 0.8em;
+        bottom: 0;
+        padding-bottom: 2vh;
     }
 
     .day {
-        font-size: 1em !important;
-        line-height: 1.2em !important;
-        margin-right: 0.5em !important;
+        font-size: 1em;
+        line-height: 1.2em;
+        margin-right: 0.5em;
     }
 
     .tanka {
-        font-size: 2em !important;
-        line-height: 1.2em !important;
-        margin-left: 0.5em !important;
+        font-size: 2em;
+        line-height: 1.2em;
+        margin-left: 0.5em;
     }
 
     #defuriganify, #toggleButton {
-        font-size: 0.8em !important;
-        margin-left: 0 !important;
+        font-size: 0.8em;
+        margin-left: 0;
     }
 }

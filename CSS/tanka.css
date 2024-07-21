@@ -209,11 +209,12 @@ a.foot:active{
 /* For Mobile Devices */
 @media (max-width: 480px) {
     body {
+        position: relative;
         height: auto;
         margin: 2vh 0;
         max-width: 96vw;
-        padding: 0 2vw;
-        text-align: center;
+        padding: 8vh 5vw;
+
     }
 
     header, footer {
@@ -224,23 +225,32 @@ a.foot:active{
 
     header {
         font-size: 1.5em;
-        top: 0;
+        position: sticky;
+        top: auto;
+        right: 0;
+        transform: translate(calc(25% - .5em), -10%);
+        text-align: center;
+        padding-bottom: 10vw;
     }
 
     footer {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-47%, -60%);
+        text-align: center;
         font-size: 0.8em;
-        bottom: 0;
     }
 
     .day {
         font-size: 1em;
-        line-height: 1.2em;
-        margin: 1em 0;
+        line-height: 1.5em;
+        margin: 1em 1em;
     }
 
     .tanka {
         font-size: 2em;
-        line-height: 1.2em;
+        line-height: 1.5em;
         margin: 1em 0;
     }
 

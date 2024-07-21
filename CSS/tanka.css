@@ -220,7 +220,7 @@ a.foot:active{
         position: relative !important;
         margin: 1vh 0 !important;
         padding: 1vh 2vw !important;
-        left: 0 !important;
+        left: auto !important;
         display: inline-block;
     }
 

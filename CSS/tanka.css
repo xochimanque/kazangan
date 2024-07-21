@@ -270,8 +270,9 @@ a.foot:active{
         font-size: 0.8em;
     }
 }
-@media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio:0) {
+@media (max-width: 480px) and (-webkit-min-device-pixel-ratio:0) {
 .headcont {
-        transform: translate(-112%,-60%);
+        -webkit-transform-origin: 50% 50%;
+
     }
 }

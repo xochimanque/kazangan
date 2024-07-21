@@ -227,13 +227,15 @@ a.foot:active{
         font-size: 1.5em !important;
         margin-top: 0 !important;
         padding-top: 1vh !important;
+        top: auto;
     }
 
     footer {
         font-size: 0.8em !important;
         margin-bottom: 0 !important;
         padding-bottom: 1vh !important;
-        top: 15em !important;
+        top: auto !important;
+        bottom: auto;
     }
 
     .day {

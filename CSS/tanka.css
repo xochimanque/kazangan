@@ -270,29 +270,8 @@ a.foot:active{
         font-size: 0.8em;
     }
 }
-/*@media screen and (-webkit-min-device-pixel-ratio:0) {
-    body {
-        -webkit-font-smoothing: antialiased;
+@media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio:0) {
+.headcont {
+        transform: translate(-112%,-60%);
     }
-
-    .tanka-container {
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        -webkit-align-items: center;
-        align-items: center;
-    }
-    .headcont {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-}*/
+}

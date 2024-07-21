@@ -216,7 +216,7 @@ a.foot:active{
     }
 
     header, footer {
-        position: fixed;
+        position: sticky;
         width: 100%;
         left: 50vw;
     }

@@ -218,7 +218,7 @@ a.foot:active{
     header, footer {
         position: fixed;
         width: 100%;
-        left: 0;
+        left: 50vw;
     }
 
     header {

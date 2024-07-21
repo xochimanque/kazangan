@@ -1,6 +1,7 @@
 html{
     writing-mode: vertical-rl;
     max-width: 100vw;
+    overflow-x: scroll;
 }
 
 body{
@@ -40,31 +41,41 @@ body{
     color: #7c745f;
     transition: all 1s ease-in-out;
 }
-body > header {
+.headcont{
+    position: sticky;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.headcont > header {
     font-family: hot-tenkoinkk, sans-serif;
     font-size: 2.5em;
     font-weight: 400;
     color: #576936;
     writing-mode: horizontal-tb;
     position: sticky;
-    margin-top: -22vh;
-    top:1vh;
+    margin-top: 0;
+    top:3vh;
     padding-top: 2vh;
-    left: calc(50vw  - 3em/2);
+    left: 50%;
     text-align: center;
     transition: opacity 1s ease-in-out;
 
 }
 
-footer{
+.headcont > footer{
     font-family: hot-tenkoinkk, sans-serif;
     font-size: 1.25em;
     font-weight: 400;
     color: #7c745f;
     writing-mode: horizontal-tb;
     position: sticky;
-    margin-bottom: -22vh;
+    margin-bottom: -80vh;
     top: 92vh;
+    padding-top: 5vh;
     padding-bottom: 5vh;
     left: calc(50vw  - 20em/2);
     text-align: center;
@@ -167,22 +178,30 @@ a.foot:active{
     html, body{
         overflow-x: hidden;
     }
-    body {
+    body, .headcont {
         position: relative;
         height: auto;
         margin: 2vh 0;
-        max-width: 93vw;
+        max-width: 90vw;
         padding: 8vh 5vw;
+        overflow-x: hidden;
 
     }
+    .headcont{
+        max-width: 95vw;
+        display: block;
+        position: fixed;
+        transform: translate(-12%, -60%);
+    }
 
-    header, footer {
+    .headcont > header, .headcont > footer {
         width: 100%;
-        left: 0;
+        right: 0;
+        display: block;
 
     }
 
-    header {
+    .headcont > header {
 
         background: white;
         font-size: 1.5em;
@@ -191,11 +210,12 @@ a.foot:active{
         left: 100% !important;
         text-align: center;
         padding-bottom: 1vh;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+
 
     }
 
-    footer {
+    .headcont > footer {
         background: white;
         position: sticky;
         top: 6em;
@@ -203,9 +223,19 @@ a.foot:active{
         text-align: center;
         font-size: 0.8em;
         padding-bottom: 1vh;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
+        margin-right: 1em;
     }
-
+    .headcont{
+        position: sticky;
+        top: 0;
+        padding-bottom: 1.5em;
+        left: 100% !important;
+        background: white;
+        writing-mode: horizontal-tb;
+        padding-right: 1em;
+        margin-top: 1em;
+}
     .day {
         font-size: 1em;
         line-height: 1.5em;
@@ -215,9 +245,9 @@ a.foot:active{
 
     .tanka {
         font-size: 2em;
-        line-height: 1.5em;
+        line-height: 1em;
         margin: 1em 0;
-        padding-left: 1.5em;
+        padding-left: 1em;
         padding-top: 1em;
         padding-bottom: 0  !important;
     }

@@ -167,9 +167,10 @@ a.foot:active{
 @media (max-width: 768px) {
     body {
         height: auto;
-        margin: 5vh 5vw;
+        margin: 5vh 0;
         max-width: 90vw;
-        padding-left: 5vw;
+        padding: 0 5vw;
+        text-align: center;
     }
 
     header, footer {
@@ -191,18 +192,17 @@ a.foot:active{
     .day {
         font-size: 1.2em;
         line-height: 1.5em;
-        margin-right: 1em;
+        margin: 1em 0;
     }
 
     .tanka {
         font-size: 2.5em;
         line-height: 1.5em;
-        margin-left: 1em;
+        margin: 1em 0;
     }
 
     #defuriganify, #toggleButton {
         font-size: 1em;
-        margin-left: 0;
     }
 }
 
@@ -210,43 +210,41 @@ a.foot:active{
 @media (max-width: 480px) {
     body {
         height: auto;
-        margin: 2vh 2vw;
+        margin: 2vh 0;
         max-width: 96vw;
-        padding-left: 2vw;
+        padding: 0 2vw;
+        text-align: center;
     }
 
     header, footer {
-        position: sticky;
+        position: fixed;
         width: 100%;
-        left: 50vw;
+        left: 0;
     }
 
     header {
         font-size: 1.5em;
         top: 0;
-        padding-top: 2vh;
     }
 
     footer {
         font-size: 0.8em;
         bottom: 0;
-        padding-bottom: 2vh;
     }
 
     .day {
         font-size: 1em;
         line-height: 1.2em;
-        margin-right: 0.5em;
+        margin: 1em 0;
     }
 
     .tanka {
         font-size: 2em;
         line-height: 1.2em;
-        margin-left: 0.5em;
+        margin: 1em 0;
     }
 
     #defuriganify, #toggleButton {
         font-size: 0.8em;
-        margin-left: 0;
     }
 }

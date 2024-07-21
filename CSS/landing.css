@@ -56,19 +56,19 @@ h2 {
 }
 @media (max-width: 768px) {
     h1 {
-        font-size: 8em;
+        font-size: 8em !important;
     }
     h2 {
-        font-size: 3em;
+        font-size: 3em !important;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 5em;
+        font-size: 5em !important;
     }
     h2 {
-        font-size: 2em;
+        font-size: 2em !important;
     }
 }
 

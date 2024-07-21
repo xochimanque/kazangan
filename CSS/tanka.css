@@ -219,8 +219,8 @@ a.foot:active{
     header, footer {
         position: relative !important;
         margin: 1vh 0 !important;
-        padding: 1vh 0 !important;
-        left: 0 !important;
+        padding: 1vh 1vw !important;
+        right: 2vw!important;
     }
 
     header {

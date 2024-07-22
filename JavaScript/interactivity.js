@@ -103,7 +103,7 @@ function disableMediaQuery(query) {
 function adjustTankaSpacing() {
     const tankaElements = document.querySelectorAll('tanka');
     tankaElements.forEach(el => {
-        el.style.lineHeight = '1.2'; // Adjust the line height as needed
+        el.style.lineHeight = '0.7'; // Adjust the line height as needed
     });
 }
 

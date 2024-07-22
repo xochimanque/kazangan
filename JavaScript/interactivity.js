@@ -107,6 +107,11 @@ function adjustTankaSpacing() {
     });
 }
 
+document.fonts.ready.then(function() {
+    document.body.style.setProperty('opacity', '1', 'important')// Set body opacity to 1 when fonts are loaded
+    document.querySelector('.tanka, .tanka-container, .day, .headcont').style.opacity = '1'; // Set content opacity to 1
+});
+
 // Wait until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Check if the device is iOS
@@ -116,3 +121,5 @@ document.addEventListener('DOMContentLoaded', () => {
         adjustTankaSpacing();
     }
 });
+
+

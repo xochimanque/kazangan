@@ -11,6 +11,7 @@ html{
 
 body{
     position: relative;
+    opacity: 0 !important;
     height: 50vh;
     margin-bottom: 20vh;
     margin-top: 25vh;
@@ -18,6 +19,9 @@ body{
     margin-right: calc(8px + 1.5625vw);
     padding-left: calc(8px + 1.5625vw);
     text-align: left;
+}
+.tanka-container{
+    opacity: inherit;
 }
 .hidden {
     opacity: 0 !important;
@@ -48,11 +52,13 @@ body{
 }
 .headcont{
     position: sticky;
+    opacity: inherit;
     display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    transition: opacity 1s ease-in-out;
 
 }
 .headcont > header {
@@ -90,6 +96,7 @@ body{
 
 .day{
     text-align: left;
+    opacity: inherit;
     text-indent: 2rem;
     font-family: hot-tenkoinkk, sans-serif;
     color: maroon;
@@ -101,11 +108,13 @@ body{
 }
 .tanka{
     text-align: left;
+    opacity: inherit;
     text-indent: 0;
     font-family: ab-appare, sans-serif;
     font-size: 3em;
     line-height: 2em;
     margin-left: 2em;
+    transition: opacity 1s ease-in-out;
 }
 
 .tanka rt{

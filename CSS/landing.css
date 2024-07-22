@@ -4,9 +4,16 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+body{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 .landing{
     position: absolute;
+    opacity: inherit;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

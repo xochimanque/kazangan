@@ -28,26 +28,8 @@
     <h3><a href="20240722.html">ニ十ニ日</a></h3>
 </div>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Scroll to the rightmost side of the page after the page has fully loaded
-        window.scrollTo({ left: document.body.scrollWidth, behavior: 'smooth' });
-    });
-
-    document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', (event) => {
-            event.preventDefault();
-            const href = link.getAttribute('href');
-            // Navigate to the new page and then scroll
-            setTimeout(() => {
-                window.location.href = href;
-            }, 100);
-        });
-    });
-
-    window.addEventListener('load', () => {
-        // Ensure the page scrolls to the rightmost side after it has fully loaded
-        window.scrollTo({ left: document.body.scrollWidth, behavior: 'smooth' });
-    });
+    document.fonts.ready.then(function() {
+        document.body.style.setProperty('opacity', '1', 'important')});
 </script>
 </body>
 </html>

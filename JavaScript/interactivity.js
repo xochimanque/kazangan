@@ -101,13 +101,23 @@ function disableMediaQuery(query) {
 
 // Function to adjust interlinear spacing for tanka tag
 function adjustTankaSpacing() {
-    const tankaElements = document.querySelectorAll('tanka');
+    const tankaElements = document.querySelectorAll('.tanka');
     tankaElements.forEach(el => {
         el.style.lineHeight='1em';
         el.style.marginLeft= '0';
         el.style.paddingLeft = '1em'; // Adjust the line height as needed
     });
 }
+
+/*// Wait until the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if the device is iOS
+    if (isIOS()) {
+        // Disable the specific media query
+        disableMediaQuery('(max-width: 480px)');
+        adjustTankaSpacing();
+    }
+});*/
 
 function setOpacityForFont(fontName, opacityValue) {
     const elements = document.querySelectorAll('.tanka, .tanka-container, .day, .headcont');
@@ -148,15 +158,7 @@ document.fonts.ready.then(function() {
     });
 });
 
-// Wait until the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-    // Check if the device is iOS
-    if (isIOS()) {
-        // Disable the specific media query
-        disableMediaQuery('(max-width: 480px)');
-        adjustTankaSpacing();
-    }
-});
+
 
 
 

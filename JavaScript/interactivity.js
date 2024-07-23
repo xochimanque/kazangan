@@ -109,9 +109,43 @@ function adjustTankaSpacing() {
     });
 }
 
+function setOpacityForFont(fontName, opacityValue) {
+    const elements = document.querySelectorAll('.tanka, .tanka-container, .day, .headcont');
+
+    elements.forEach(function(element) {
+        const computedFontFamily = window.getComputedStyle(element).fontFamily;
+        if (computedFontFamily.includes(fontName)) {
+            element.style.opacity = opacityValue;
+        }
+    });
+}
+
+// Check if 'hot-tenkoinkk' font has already been loaded
+if (localStorage.getItem('hotTenkoinkkFontLoaded')) {
+    setOpacityForFont('hot-tenkoinkk', '1');
+} else {
+    // Wait for the 'hot-tenkoinkk' font to be ready
+    document.fonts.load('1em hot-tenkoinkk').then(function() {
+        setOpacityForFont('hot-tenkoinkk', '1');
+        // Mark the font as loaded in local storage
+        localStorage.setItem('hotTenkoinkkFontLoaded', 'true');
+    });
+}
+
+// Wait for all fonts to be ready
 document.fonts.ready.then(function() {
-    document.body.style.setProperty('opacity', '1', 'important')// Set body opacity to 1 when fonts are loaded
-    document.querySelector('.tanka, .tanka-container, .day, .headcont').style.opacity = '1'; // Set content opacity to 1
+    // Set body opacity to 1 when all fonts are loaded
+    document.body.style.setProperty('opacity', '1', 'important');
+
+    // Set opacity for all other elements that do not use 'hot-tenkoinkk'
+    const elements = document.querySelectorAll('.tanka, .tanka-container, .day, .headcont');
+
+    elements.forEach(function(element) {
+        const computedFontFamily = window.getComputedStyle(element).fontFamily;
+        if (!computedFontFamily.includes('hot-tenkoinkk')) {
+            element.style.opacity = '1';
+        }
+    });
 });
 
 // Wait until the DOM is fully loaded

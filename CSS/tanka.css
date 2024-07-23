@@ -238,10 +238,12 @@ a.foot:active{
 
         font-size: 1.5em;
         position: fixed;
-        top: 1em;
+        top: 2vh;
         text-align: center;
         padding-bottom: 2vh;
-        margin-bottom: 0.5em;
+        margin-bottom: 2em;
+        padding-top: 2em;
+        margin-top: 2vh;
 
 
     }
@@ -253,6 +255,8 @@ a.foot:active{
         transform: translate(0,10vh);
         font-size: 0.8em;
         padding-bottom: 1vh;
+        padding-top: 2vh;
+        margin-top: 5vh;
         margin-bottom: 1em;
 
     }

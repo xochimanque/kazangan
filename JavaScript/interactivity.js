@@ -103,7 +103,9 @@ function disableMediaQuery(query) {
 function adjustTankaSpacing() {
     const tankaElements = document.querySelectorAll('tanka');
     tankaElements.forEach(el => {
-        el.style.lineHeight = '0.6em'; // Adjust the line height as needed
+        el.style.lineHeight='1em';
+        el.style.marginLeft= '0';
+        el.style.paddingLeft = '1em'; // Adjust the line height as needed
     });
 }
 
@@ -121,5 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
         adjustTankaSpacing();
     }
 });
+
 
 

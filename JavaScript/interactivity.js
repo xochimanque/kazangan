@@ -109,7 +109,7 @@ function adjustTankaSpacing() {
     });
 }
 
-/*// Wait until the DOM is fully loaded
+// Wait until the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Check if the device is iOS
     if (isIOS()) {
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
         disableMediaQuery('(max-width: 480px)');
         adjustTankaSpacing();
     }
-});*/
+});
 
 function setOpacityForFont(fontName, opacityValue) {
     const elements = document.querySelectorAll('.tanka, .tanka-container, .day, .headcont');

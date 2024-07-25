@@ -117,6 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
         disableMediaQuery('(max-width: 480px)');
         adjustTankaSpacing();
     }
+    if(isIOS()===false){
+        disableMediaQuery('(max-width: 490px)');
+    }
 });
 
 function setOpacityForFont(fontName, opacityValue) {

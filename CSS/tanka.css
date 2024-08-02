@@ -135,6 +135,15 @@ body{
     display: ruby-text;
 
 }
+.tanka rt.hentaigana{
+    font-family: ab-kouran-gyosho, sans-serif;
+    font-size: 0.35em;
+    color: #273800 !important;
+    transition: all  0.17s ease-in-out !important;
+    opacity: 1 !important;
+    display: ruby-text;
+
+}
 a.home:link{
     text-decoration: none;
     color: #576936;

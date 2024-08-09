@@ -141,7 +141,7 @@ if (localStorage.getItem('hotTenkoinkkFontLoaded')) {
     document.fonts.load('1em hot-tenkoinkk').then(function() {
         setOpacityForFont('hot-tenkoinkk', '1');
         // Mark the font as loaded in local storage
-        localStorage.setItem('hotTenkoinkkFontLoaded', 'true');
+        /*localStorage.setItem('hotTenkoinkkFontLoaded', 'true');*/
     });
 }
 
